@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.25.0 FATAL_ERROR)
 
 set(PROJECT AmneziaVPN)
+set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_OSX_DEPLOYMENT_TARGET "13.0")
 project(${PROJECT})
 
 if(ANDROID)
