@@ -570,6 +570,7 @@ ServerController::Vars ServerController::genVarsForScript(const ServerCredential
     vars.append({{"$SFTP_PASSWORD", sftpConfig.value(config_key::password).toString() }});
 
     // Nextcloud vars
+    vars.append({{"$NEXTCLOUD_PORT", sftpConfig.value(config_key::port).toString(QString::number(ProtocolProps::defaultPort(Proto::Nextcloud))) }});
     vars.append({{"$NEXTCLOUD_ADMIN_USER", nextcloudConfig.value(config_key::adminUser).toString(protocols::nextcloud::defaultAdminUser) }});
     vars.append({{"$NEXTCLOUD_ADMIN_PASSWORD", nextcloudConfig.value(config_key::adminPassword).toString(protocols::nextcloud::defaultAdminPassword) }});
 

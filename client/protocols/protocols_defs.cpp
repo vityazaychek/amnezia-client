@@ -119,6 +119,7 @@ int ProtocolProps::defaultPort(Proto p)
     case Proto::Dns :          return 53;
     case Proto::FileShare :    return 139;
     case Proto::Sftp :         return 222;
+    case Proto::Nextcloud :    return 8080;
     default:                      return -1;
     }
 }

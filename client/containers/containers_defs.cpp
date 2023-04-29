@@ -148,6 +148,7 @@ Proto ContainerProps::defaultProtocol(DockerContainer c)
     case DockerContainer::Dns :          return Proto::Dns;
     //case DockerContainer::FileShare :    return Protocol::FileShare;
     case DockerContainer::Sftp :         return Proto::Sftp;
+    case DockerContainer::Nextcloud :    return Proto::Nextcloud;
     default:                             return Proto::Any;
     }
 }
